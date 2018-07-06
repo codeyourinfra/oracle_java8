@@ -17,4 +17,4 @@ Ansible role to install Oracle Java 8.
 
 ## Author Information
 
-@gustavomcarmo is a contributor of the [Codeyourinfra](https://github.com/codeyourinfra/codeyourinfra) project. Be a contributor too!
+[@gustavomcarmo](https://github.com/gustavomcarmo) is a contributor of the [codeyourinfra](https://github.com/codeyourinfra/codeyourinfra) project. Be a contributor too!
