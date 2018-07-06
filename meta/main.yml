@@ -1,0 +1,18 @@
+galaxy_info:
+  author: Gustavo Muniz do Carmo
+  description: Role to install Oracle Java 8
+  company: codeyourinfra.today
+  license: MIT
+
+  min_ansible_version: 1.2
+
+  platforms:
+    - name: Ubuntu
+    versions:
+      - bionic
+      - xenial
+
+  galaxy_tags:
+    - oracle
+    - java
+    - jdk
