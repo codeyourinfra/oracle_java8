@@ -16,3 +16,5 @@ galaxy_info:
     - oracle
     - java
     - jdk
+  
+  dependencies: []
