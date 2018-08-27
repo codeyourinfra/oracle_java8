@@ -1,5 +1,4 @@
 ---
-- hosts: localhost
-  remote_user: root
+- hosts: containers
   roles:
-    - oracle-java8
+    - oracle_java8

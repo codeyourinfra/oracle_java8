@@ -1,2 +1,6 @@
-localhost
+[containers]
+bionic
+xenial
 
+[containers:vars]
+ansible_connection=docker
