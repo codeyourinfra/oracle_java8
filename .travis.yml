@@ -2,8 +2,10 @@
 language: python
 python: "2.7"
 
-# Use the new container infrastructure
-sudo: false
+sudo: required
+
+services:
+  - docker
 
 # Install ansible
 addons:
@@ -19,8 +21,11 @@ install:
   - ansible --version
 
 script:
-  # Basic role syntax check
-  - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
+  - docker run --name xenial -d codeyourinfra/python3:xenial
+  - docker run --name bionic -d codeyourinfra/python3:bionic
+  - ansible-playbook tests/test.yml -i tests/inventory
+  - docker stop xenial bionic
+  - docker rm xenial bionic
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
