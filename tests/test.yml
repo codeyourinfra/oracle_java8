@@ -1,4 +1,5 @@
 ---
 - hosts: containers
+  gather_facts: no
   roles:
     - oracle_java8
