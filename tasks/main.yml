@@ -1,4 +1,10 @@
 ---
+- name: Install required packages
+  apt:
+    name: "{{ item }}"
+  loop:
+    - ca-certificates
+    - gnupg
 - name: Add the Oracle Java repository into sources list
   apt_repository:
     repo: 'ppa:webupd8team/java'
