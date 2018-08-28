@@ -1,6 +1,6 @@
 # oracle_java8
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub release](https://img.shields.io/github/release/codeyourinfra/oracle-java8.svg)]() [![Build status](https://travis-ci.org/codeyourinfra/oracle-java8.svg?branch=master)](https://travis-ci.org/codeyourinfra/oracle-java8)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub release](https://img.shields.io/github/release/codeyourinfra/oracle_java8.svg)]() [![Build status](https://travis-ci.org/codeyourinfra/oracle_java8.svg?branch=master)](https://travis-ci.org/codeyourinfra/oracle_java8)
 
 Ansible role to install Oracle Java 8.
 
