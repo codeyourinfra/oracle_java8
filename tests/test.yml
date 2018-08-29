@@ -3,3 +3,11 @@
   gather_facts: no
   roles:
     - oracle_java8
+  tasks:
+    - name: Get Java version
+      shell: java -version
+      register: java_version_result
+    - name: Assert Java version
+      assert:
+        that: java_version_result.stderr_lines[0] | regex_search('^java version "1.8.0_\d*"$') != ''
+        msg: "Failure on Oracle Java 8 installation"
