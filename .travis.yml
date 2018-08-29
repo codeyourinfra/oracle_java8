@@ -14,6 +14,7 @@ addons:
 
 install:
   - pip install ansible
+  - gem install travis
 
 before_script:
   - docker run --name xenial -d codeyourinfra/python3:xenial
