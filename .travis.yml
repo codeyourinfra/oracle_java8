@@ -7,23 +7,22 @@ sudo: required
 services:
   - docker
 
-# Install ansible
 addons:
   apt:
     packages:
     - python-pip
 
 install:
-  # Install ansible
   - pip install ansible
 
-  # Check ansible version
-  - ansible --version
-
-script:
+before_script:
   - docker run --name xenial -d codeyourinfra/python3:xenial
   - docker run --name bionic -d codeyourinfra/python3:bionic
+
+script:
   - ansible-playbook tests/test.yml -i tests/inventory
+
+after_script:
   - docker stop xenial bionic
   - docker rm xenial bionic
 
