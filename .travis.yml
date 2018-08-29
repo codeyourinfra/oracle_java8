@@ -30,7 +30,7 @@ after_script:
 after_success:
   - curl -LO https://raw.github.com/stephanmg/travis-dependent-builds/master/trigger.sh
   - chmod +x trigger.sh
-  - ./trigger.sh codeyourinfra jenkins master $TRAVIS_API_TOKEN
+  - ./trigger.sh codeyourinfra jenkins master $TRAVIS_GITHUB_TOKEN
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
