@@ -10,7 +10,7 @@ Ansible role to install Oracle Java 8.
 ---
 - hosts: servers
   roles:
-      - codeyourinfra.oracle_java8
+    - codeyourinfra.oracle_java8
 ```
 
 ## License
