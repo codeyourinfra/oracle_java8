@@ -27,7 +27,9 @@ after_script:
   - docker rm xenial bionic
 
 after_success:
-  - curl -s -X POST -H "Content-Type: application/json" -H "Accept: application/json" -H "Travis-API-Version: 3" -H "Authorization: token $TRAVIS_API_TOKEN" -d "{\"request\": {\"branch\":\"master\"}}" https://api.travis-ci.org/repo/codeyourinfra%2Fjenkins/requests
+  - curl -LO https://raw.github.com/stephanmg/travis-dependent-builds/master/trigger.sh
+  - chmod +x trigger.sh
+  - ./trigger.sh codeyourinfra jenkins master $TRAVIS_API_TOKEN
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
