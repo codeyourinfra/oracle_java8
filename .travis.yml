@@ -19,13 +19,14 @@ install:
 before_script:
   - docker run --name xenial -d codeyourinfra/python3:xenial
   - docker run --name bionic -d codeyourinfra/python3:bionic
+  - docker run --name alpine -d codeyourinfra/python3:alpine
 
 script:
   - ansible-playbook tests/test.yml -i tests/inventory
 
 after_script:
-  - docker stop xenial bionic
-  - docker rm xenial bionic
+  - docker stop xenial bionic alpine
+  - docker rm xenial bionic alpine
 
 after_success:
   - curl -LO https://raw.github.com/stephanmg/travis-dependent-builds/master/trigger.sh

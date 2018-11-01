@@ -13,9 +13,11 @@ Ansible role to install Oracle Java 8.
     - codeyourinfra.oracle_java8
 ```
 
+The role requires the *ansible_distribution* variable, obtained through the [gathering facts phase](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#information-discovered-from-systems-facts). So please don't turn off facts.
+
 ## Build process
 
-The build process is performed in [Travis CI](https://travis-ci.org/codeyourinfra/oracle_java8). During the build, the role is tested by using [Ubuntu Docker images with Python 3](https://hub.docker.com/r/codeyourinfra/python3).
+The build process is performed in [Travis CI](https://travis-ci.org/codeyourinfra/oracle_java8). During the build, the role is tested by using [Docker images with Python 3](https://hub.docker.com/r/codeyourinfra/python3).
 
 If the build is succeeded, dependent roles may have also its builds triggered, thanks to the [travis-dependent-builds project](https://github.com/stephanmg/travis-dependent-builds). One example is the [Codeyourinfra Jenkins Ansible role](https://galaxy.ansible.com/codeyourinfra/jenkins).
 

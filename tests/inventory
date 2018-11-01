@@ -1,6 +1,7 @@
 [containers]
 bionic
 xenial
+alpine
 
 [containers:vars]
 ansible_connection=docker
