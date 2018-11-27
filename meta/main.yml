@@ -11,7 +11,9 @@ galaxy_info:
       versions:
         - bionic
         - xenial
-        - alpine
+    - name: Alpine
+      versions:
+        - 3.8
 
   galaxy_tags:
     - oracle
