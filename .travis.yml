@@ -22,6 +22,7 @@ before_script:
   - docker run --name alpine -d codeyourinfra/python3:alpine
 
 script:
+  - ansible-galaxy install -r requirements.yml -p tests/roles
   - ansible-playbook tests/test.yml -i tests/inventory
 
 after_script:

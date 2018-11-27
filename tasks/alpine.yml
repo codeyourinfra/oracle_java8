@@ -1,4 +1,7 @@
 ---
+- name: Install glibc
+  include_role:
+    name: andrewrothstein.alpine-glibc-shim
 - name: Install required packages
   apk:
     name: tar
