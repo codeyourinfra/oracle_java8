@@ -21,8 +21,6 @@ The role requires the *ansible_distribution* variable, obtained through the [gat
 
 The build process is performed in [Travis CI](https://travis-ci.org/codeyourinfra/oracle_java8). During the build, the role is tested by using [Docker images with Python 3](https://hub.docker.com/r/codeyourinfra/python3).
 
-If the build is succeeded, dependent roles may have also its builds triggered, thanks to the [travis-dependent-builds project](https://github.com/stephanmg/travis-dependent-builds). One example is the [Codeyourinfra Jenkins Ansible role](https://galaxy.ansible.com/codeyourinfra/jenkins).
-
 ## Author Information
 
 [@gustavomcarmo](https://github.com/gustavomcarmo) is a contributor of [Codeyourinfra](https://github.com/codeyourinfra). Get on board too! :)
