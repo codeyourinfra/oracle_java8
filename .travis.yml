@@ -14,7 +14,6 @@ addons:
 
 install:
   - pip install ansible
-  - gem install travis
 
 before_script:
   - docker run --name xenial -d codeyourinfra/python3:xenial
@@ -28,12 +27,6 @@ script:
 after_script:
   - docker stop xenial bionic alpine
   - docker rm xenial bionic alpine
-
-after_success:
-  - curl -LO https://raw.github.com/stephanmg/travis-dependent-builds/master/trigger.sh
-  - chmod +x trigger.sh
-  - ./trigger.sh codeyourinfra jenkins master $TRAVIS_GITHUB_TOKEN
-  - ./trigger.sh codeyourinfra maven master $TRAVIS_GITHUB_TOKEN
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
