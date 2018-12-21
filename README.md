@@ -19,7 +19,17 @@ The role requires the *ansible_distribution* variable, obtained through the [gat
 
 ## Build process
 
-The build process is performed in [Travis CI](https://travis-ci.org/codeyourinfra/oracle_java8). During the build, the role is tested by using [Docker images with Python 3](https://hub.docker.com/r/codeyourinfra/python3).
+The build process is performed in [Travis CI](https://travis-ci.org/codeyourinfra/oracle_java8). During the build, the role is tested by using [Molecule](https://molecule.readthedocs.io).
+
+## Test yourself
+
+Inside your [Python virtual environment](https://docs.python.org/3/tutorial/venv.html), run:
+
+`pip install -r requirements.txt`
+
+And then:
+
+`molecule test`
 
 ## Author Information
 
