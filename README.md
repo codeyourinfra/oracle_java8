@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub release](https://img.shields.io/github/release/codeyourinfra/oracle_java8.svg)](https://github.com/codeyourinfra/oracle_java8/releases/latest) [![Build status](https://travis-ci.org/codeyourinfra/oracle_java8.svg?branch=master)](https://travis-ci.org/codeyourinfra/oracle_java8) [![Ansible Role](https://img.shields.io/ansible/role/29189.svg)](https://galaxy.ansible.com/codeyourinfra/oracle_java8) [![Ansible Role downloads](https://img.shields.io/ansible/role/d/29189.svg)](https://galaxy.ansible.com/codeyourinfra/oracle_java8)
 
-Ansible role to install Oracle Java 8.
+Ansible role to install Oracle Java 8. :warning: This role has been deprecated due to the impossibility of downloading the binaries from Oracle automatically ([see more](https://launchpad.net/~webupd8team/+archive/ubuntu/java)).
 
 ## Example Playbook
 
